@@ -81,6 +81,29 @@ h1, h2, h3 {
     max-height: 300px;
 }
 
+#times {
+    background: url("../images/dublin-city.webp") no-repeat center/cover;
+    /* Handles responsivity without the need for a media query */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#times div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 15px;
+    text-align: center;
+    /* This will not wrap on screens less than 400px */
+    flex-basis: 200px;
+    flex-grow: 1;
+    /* Creates a grid of meetup times over the background image */
+    border: 2px solid white;
+}
+
+#times h3 {
+    color: #fafafa;
+}
+
 /* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
@@ -122,8 +145,6 @@ header {
 #nav-toggle:checked~nav {
     display: block;
 }
-
-
 
 
 header a {
@@ -186,6 +207,7 @@ main {
         display: none;
     }
 
+    
     #logo {
         font-size: 280%;
         line-height: 75px;
